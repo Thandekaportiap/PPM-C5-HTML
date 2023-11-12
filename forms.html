@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="c:\Users\MSJ\Desktop\PPM-C5-HTML\favicon.ico">
+    <title>Form</title>
+    <style>
+        label {
+            display: block;
+        }
+        .hobby {
+            display: inline-block;
+        }
+        legend {
+            margin-left: 2%;
+        }
+        textarea {
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form</h1>
+    <form>
+        <label>Name:</label><input type="text" placeholder="name" required><br>
+        <label>Email address</label><input type="email" placeholder="email" required><br>
+        <label for="age">Age</label><input type="number" min="18" max="90" required><br>
+        <label>Cellphone number</label><input type="number" placeholder="(+27) 000000000" ><br>
+        <label>date of birth</label><input type="date"><br>
+        <label>Country</label>
+        <select>
+            <option value="current">select one</option>
+            <option value="south Afica">South Afica</option>
+            <option value="brazil">Brazil</option>
+            <option value="ghana">Ghana</option>
+            <option value="Lesoto">Lesoto</option>
+            <option value="nigeria">Nageria</option>
+        </select><br>
+        <label>Gender</label>
+        <input type="radio">Female
+        <input type="radio">Male
+        <br>
+        <fieldset>
+            <legend>Hobbies</legend>
+            <input type="checkbox">
+            <label class="hobby">Reading</label>
+            <input type="checkbox">
+            <label class="hobby">Sports</label>
+            <input type="checkbox">
+            <label class="hobby">Music</label>
+            <input type="checkbox">
+            <label class="hobby">Travel</label>
+        </fieldset>
+        <br>
+        <textarea></textarea>
+        <br>
+<input type="submit" value="submit">
+    </form>
+</body>
+</html>
